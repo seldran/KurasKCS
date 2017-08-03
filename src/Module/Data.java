@@ -1,7 +1,7 @@
 package Module;
 
 
-public class Module
+public class Data
 {
     private float distance;
     private float fuelUsed;

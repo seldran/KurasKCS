@@ -1,6 +1,6 @@
 package Controller;
 
-import Module.Module;
+import Module.Data;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -11,11 +11,11 @@ public class Controller
     public TextField textFieldInput2;
     public TextArea textAreaResult;
 
-    private Module m;
+    private Data m;
 
     public Controller()
     {
-        m = new Module();
+        m = new Data();
     }
 
     private void SetDistance()
@@ -32,7 +32,6 @@ public class Controller
     public void calculateResult(ActionEvent actionEvent) {
         SetDistance();
         SetFuel();
-
         textAreaResult.appendText(m.getResult() + "\n");
     }
 }
