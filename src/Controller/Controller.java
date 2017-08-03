@@ -25,7 +25,6 @@ public class Controller
     }
     private void SetFuel()
     {
-        //Set the fuel
         float fuel = Float.parseFloat(textFieldInput1.getText());
         m.setFuelUsed(fuel);
     }
