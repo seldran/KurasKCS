@@ -13,6 +13,11 @@ public class Controller
 
     private Module m;
 
+    public Controller()
+    {
+        m = new Module();
+    }
+
     private void SetDistance()
     {
         float distance = Float.parseFloat(textFieldInput2.getText());
@@ -25,8 +30,6 @@ public class Controller
     }
 
     public void calculateResult(ActionEvent actionEvent) {
-        m = new Module();
-
         SetDistance();
         SetFuel();
 
