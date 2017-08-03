@@ -13,12 +13,23 @@ public class Controller
 
     private Module m;
 
+    private void SetDistance()
+    {
+        float distance = Float.parseFloat(textFieldInput2.getText());
+        m.setDistance(distance);
+    }
+    private void SetFuel()
+    {
+        float fuel = Float.parseFloat(textFieldInput1.getText());
+        m.setFuelUsed(fuel);
+    }
+
     public void calculateResult(ActionEvent actionEvent) {
         m = new Module();
 
-        m.setDistance(Float.parseFloat(textFieldInput1.getText()));
-        m.setFuelUsed(Float.parseFloat(textFieldInput2.getText()));
+        SetDistance();
+        SetFuel();
 
-        textAreaResult.appendText(m.getResult() + "");
+        textAreaResult.appendText(m.getResult() + "\n");
     }
 }

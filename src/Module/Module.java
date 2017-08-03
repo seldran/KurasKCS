@@ -26,7 +26,7 @@ public class Module
 
     public float getResult()
     {
-        float result = (getFuelUsed() * 100) / getDistance();
+        float result = ((getFuelUsed() * 100) / getDistance());
         return result;
     }
 
