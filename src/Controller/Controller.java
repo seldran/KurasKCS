@@ -25,6 +25,7 @@ public class Controller
     }
     private void SetFuel()
     {
+        //pakeitimas
         float fuel = Float.parseFloat(textFieldInput1.getText());
         m.setFuelUsed(fuel);
     }
